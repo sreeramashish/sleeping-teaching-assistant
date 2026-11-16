@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a1118"><title>The Sleeping Teaching Assistant | Group 8</title><style>
+:root{color-scheme:dark;--bg:#0a1118;--panel:#111e28;--ink:#eef5f8;--muted:#9aafbd;--line:#243642;--accent:#52e0b6;--wash:#183a36}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body.light{color-scheme:light;--bg:#f4f8f8;--panel:#fff;--ink:#142b36;--muted:#4e6572;--line:#cbdadb;--accent:#08745b;--wash:#d7f3e9}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button,.cta{cursor:pointer;border:1px solid var(--line);border-radius:10px;padding:10px 17px;background:var(--panel);color:var(--ink);font-weight:650}button:hover,.cta:hover{border-color:var(--accent);transform:translateY(-1px)}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:4px}button:disabled{opacity:.5;cursor:default}.primary,.cta{background:var(--accent);color:var(--bg);border-color:var(--accent)}header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}nav{max-width:1180px;margin:auto;padding:16px 24px;display:flex;align-items:center;gap:24px}.brand{font-weight:800;letter-spacing:-.5px;margin-right:auto}.brand span{color:var(--accent)}.links{display:flex;gap:22px;font-size:13px;color:var(--muted)}nav button{padding:5px 10px}main{max-width:1180px;margin:auto;padding:0 24px}section{padding:55px 0;border-bottom:1px solid var(--line)}.hero{padding:85px 0 65px;display:grid;grid-template-columns:1.4fr 1fr;gap:65px;align-items:center}.eyebrow{color:var(--accent);font:600 12px ui-monospace,monospace;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(38px,5.8vw,70px);line-height:1.08;letter-spacing:-3px;margin:20px 0 24px}h1 em{font-style:normal;color:var(--accent)}h2{font-size:30px;letter-spacing:-1px;margin:8px 0 15px;line-height:1.3}h3{font-size:18px;margin:12px 0}p{color:var(--muted);max-width:760px}.lead{font-size:19px;line-height:1.65}.credit{font-size:13px;color:var(--muted);margin:20px 0 28px}.terminal{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 25px 65px #0003;overflow:hidden}.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 20px;border-bottom:1px solid var(--line);font:12px ui-monospace,monospace;color:var(--muted)}.dots{color:var(--accent);letter-spacing:5px}.terminal pre{padding:22px;font:13px/2 ui-monospace,monospace;white-space:pre-wrap;margin:0;color:var(--muted)}.terminal b{color:var(--accent)}.sectiontop{display:flex;align-items:center;justify-content:space-between;gap:20px}.pill{font:11px ui-monospace,monospace;border:1px solid var(--line);background:var(--wash);padding:5px 10px;border-radius:30px;color:var(--accent)}.dashboard{display:grid;grid-template-columns:1fr 285px;gap:18px;margin-top:26px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 28px #0001}.stage{display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:center;min-height:230px}.office{border-right:1px dashed var(--line);text-align:center;padding-right:24px}.figure{font-size:60px;display:block;line-height:1.5;animation:breathe 3s infinite}.active .figure{animation:breathe .8s infinite}.office strong{display:block;font-size:15px}.office small{color:var(--muted);font-size:12px}.chairs{display:flex;flex-wrap:wrap;gap:12px;min-height:100px;align-items:center}.chair{border:1px dashed var(--line);border-radius:12px;min-width:66px;text-align:center;padding:12px 8px;color:var(--muted);transition:background .3s,transform .3s}.chair.taken{background:var(--wash);border:1px solid var(--accent);color:var(--accent);animation:enter .35s}.chair span{display:block;font-size:27px}.chair small{font:11px ui-monospace,monospace}.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);padding-top:20px;gap:15px}.stats b{display:block;font:600 25px ui-monospace,monospace;color:var(--accent)}.stats small{font-size:11px;color:var(--muted)}.controls h3{margin-top:0}.controls label{display:block;font-size:12px;color:var(--muted);margin:14px 0 4px}.controls input[type=range]{width:100%;accent-color:var(--accent)}.controls select{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:8px;color:var(--ink);padding:7px}.controls button{font-size:12px;padding:9px}.buttons{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.controls .primary{width:100%;margin-top:16px}.check{display:flex;gap:8px;align-items:center}.check label{margin:0}.signals{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;font:11px ui-monospace,monospace;color:var(--muted)}.signals span{padding:7px 10px;border:1px solid var(--line);border-radius:7px}.logwrap{grid-column:1/-1;padding:0;overflow:hidden}.log{height:200px;overflow:auto;padding:12px 20px;font:12px/1.8 ui-monospace,monospace}.event{padding:3px 0;border-bottom:1px solid var(--line);animation:enter .2s}.event time{color:var(--muted);margin-right:14px}.event.good{color:var(--accent)}.event.warn{color:#efbb75}.event.note{color:var(--muted)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:25px 0}.num{font:12px ui-monospace,monospace;color:var(--accent)}.grid3 p{font-size:14px;margin-bottom:0}.flow{font:13px/2 ui-monospace,monospace;color:var(--accent);padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.fine{font-size:12px}.codebox{max-height:570px;overflow:auto;padding:16px 0;counter-reset:line;font:12px/1.8 ui-monospace,SFMono-Regular,Consolas,monospace}.codebox code{display:block;min-width:max-content}.line{display:block;white-space:pre;padding-right:24px;counter-increment:line}.line:before{content:counter(line);display:inline-block;width:45px;text-align:right;margin-right:20px;color:var(--muted);border-right:1px solid var(--line);padding-right:12px;user-select:none}.comment{color:#89a598}.keyword{color:var(--accent)}.string{color:#e4be87}.run{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}footer{padding:35px 24px;text-align:center;color:var(--muted);font-size:12px}footer b{color:var(--accent)}@keyframes breathe{50%{transform:translateY(-5px)}}@keyframes enter{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}@media(max-width:850px){.hero{gap:25px}.dashboard{grid-template-columns:1fr}.controls{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.controls h3,.controls .buttons{grid-column:1/-1}.grid3{grid-template-columns:1fr}.run{grid-template-columns:1fr}.links{gap:13px}}@media(max-width:620px){nav{flex-wrap:wrap;padding:12px 18px;gap:10px}.links{order:3;width:100%;justify-content:space-between;font-size:11px}main{padding:0 18px}.hero{display:block;padding:50px 0}.hero .terminal{margin-top:35px}h1{letter-spacing:-1.8px}.stage{grid-template-columns:95px 1fr;gap:15px}.office{padding-right:15px}.figure{font-size:43px}.chair{min-width:51px;padding:8px 4px}.card{padding:18px}.stats{gap:8px}.stats b{font-size:21px}.sectiontop{align-items:flex-start}.pill{font-size:9px}.controls{display:block}.codebox{font-size:11px}.logwrap{padding:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style></head><body><header><nav aria-label="Main navigation"><a class="brand" href="#">TA<span> / </span>lab.</a><div class="links"><a href="#problem">Problem</a><a href="#simulation">Simulation</a><a href="#design">Design</a><a href="#code">Code</a><a href="#run">Run locally</a></div><button id="theme" aria-label="Toggle light or dark theme">◐</button></nav></header><main>
+<section class="hero"><div><div class="eyebrow">Operating systems / end-term project</div><h1>Great help.<br>Zero <em>busy waiting.</em></h1><p class="lead">The Sleeping Teaching Assistant.<br>A small office. Three chairs. A lesson in synchronization.</p><div class="credit">Group 8 - CSE 302 - SRM University AP - November 2026<br>Instructor: Syed Sameen Ahmad Rizvi</div><a class="cta" href="#simulation">Explore the simulation ↓</a></div><div class="terminal"><div class="bar"><span class="dots">●●●</span><span>office_hours.c</span></div><pre><b>01</b>  No students in the hallway.
+<b>02</b>  TA → sleeping 😴
+<b>03</b>  A student needs help.
+<b>04</b>  sem_post(&amp;students_sem);
+<b>05</b>  TA → awake ✨
+
+// Threads cooperate.
+// Nobody spins.</pre></div></section>
+<section id="problem"><div class="eyebrow">01 / The challenge</div><h2>One TA. Many students. Shared space.</h2><p>A teaching assistant helps one student at a time and sleeps when nobody needs help. Arriving students wake the TA, or wait in one of N hallway chairs while the TA is busy. If every chair is occupied, they leave and try again later. A mutex protects the chair count; semaphores signal waiting students and TA availability.</p><p class="fine">The original C program uses three chairs and six student threads by default. Every student needs help twice. Explore different chair counts below.</p></section>
+<section id="simulation"><div class="sectiontop"><div><div class="eyebrow">02 / Interactive playground</div><h2>Office hours, visualized.</h2></div><span class="pill" id="live">● RUNNING</span></div><p>Send a student in, fill the hallway, and watch the signals do their work.</p><div class="dashboard"><div class="card"><div class="stage"><div class="office" id="office"><span class="figure" id="figure" aria-hidden="true">😴</span><strong id="taState">TA is sleeping</strong><small id="studentState">Waiting for a signal</small></div><div><div class="eyebrow">The hallway</div><div class="chairs" id="chairs" aria-label="Waiting chairs"></div></div></div><div class="stats"><div><b id="helped">0</b><small>Help sessions</small></div><div><b id="waiting">0</b><small>Waiting</small></div><div><b id="left">0</b><small>Full-chair exits</small></div><div><b id="done">0/6</b><small>Students done</small></div></div><div class="signals"><span id="studentSem">students_sem = 0</span><span id="taSem">ta_sem = 0</span><span id="mutex">mutex: unlocked</span></div></div>
+<aside class="card controls"><h3>Control panel</h3><div><label for="capacity">Waiting chairs (resets simulation)</label><select id="capacity"><option >1</option><option >2</option><option selected>3</option><option >4</option><option >5</option><option >6</option></select></div><div><label for="arrival">Arrival interval · <output id="arrivalOut">2.0 s</output></label><input id="arrival" type="range" min="300" max="5000" step="100" value="2000"></div><div><label for="help">Help duration · <output id="helpOut">3.0 s</output></label><input id="help" type="range" min="500" max="6000" step="100" value="3000"></div><div class="check"><input type="checkbox" id="auto" checked><label for="auto">Random arrivals</label></div><button class="primary" id="arrive">+ Arrive next student</button><div class="buttons"><button id="pause">Pause</button><button id="reset">↻ Reset</button></div></aside>
+<div class="card logwrap"><div class="bar"><span>EVENT STREAM / newest first</span><span id="clock">00:00</span></div><div class="log" id="log" role="log" aria-label="Simulation events" aria-live="off"></div></div></div><p class="fine">Six students • two visits each • random semaphore wake order, not FIFO. Arrivals select a programming student; full-chair exits retry on a later arrival. Pause freezes simulation time; changing chairs resets the class. This is a teaching visualization, not execution of the C program.</p></section>
+<section id="design"><div class="eyebrow">03 / Under the hood</div><h2>Three primitives. One coordinated system.</h2><div class="grid3"><article class="card"><span class="num">01 / THREADS</span><h3>Independent students</h3><p>One TA thread and one thread per student run concurrently. Students program, ask for help twice, and finish. The last student wakes the TA to shut down.</p></article><article class="card"><span class="num">02 / MUTEX</span><h3>Protect the chairs</h3><p>chairs_mutex makes checking and updating waiting_students a single critical section. It also guards students_done. Release it before waiting on a semaphore.</p></article><article class="card"><span class="num">03 / SEMAPHORES</span><h3>Signal, don't spin</h3><p>students_sem counts seated students and wakes the TA. ta_sem lets the TA call one waiting student in. Both start at zero: no work, no busy waiting.</p></article></div><div class="flow">STUDENT → lock → check / sit → unlock → post(students_sem)<br>TA → wait(students_sem) → lock → free chair → unlock → post(ta_sem)<br>STUDENT → wait(ta_sem) → get help → program again or finish</div><p class="fine">Model boundary: JavaScript's event loop serializes the illustrated critical sections. This visualization treats a help session as one complete interaction. The verbatim C source uses independent random sleeps for TA and student, with no help-completion handshake; it does not enforce identical timing or a FIFO queue. No source fixes have been silently applied.</p></section>
+<section id="code"><div class="sectiontop"><div><div class="eyebrow">04 / The implementation</div><h2>Read the real C program.</h2></div></div><p>Appendix A from the project report. POSIX threads, one mutex, two semaphores.</p><div class="terminal"><div class="bar"><span>sleeping_ta.c · C / POSIX</span><button id="copy">Copy source</button></div><div class="codebox" tabindex="0" aria-label="Full C source"><code id="source">/*
+ * Sleeping Teaching Assistant - POSIX threads, mutex lock, semaphores
+ * Compile: gcc -Wall -pthread sleeping_ta.c -o sleeping_ta
+ * Run:     ./sleeping_ta [number_of_students]   (default 6)
+ *
+ * Idea:
+ * - students_sem : counts students waiting in hallway chairs (TA sleeps on it when 0)
+ * - ta_sem        : TA signals "I am ready" to ONE waiting student
+ * - chairs_mutex : protects the shared counter waiting_students
+ * - 3 chairs in the hallway; if all taken, student leaves and comes back later
+ */
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;pthread.h&gt;
+#include &lt;semaphore.h&gt;
+#include &lt;unistd.h&gt;
+
+#define NUM_CHAIRS 3
+#define HELPS_PER_STUDENT 2          /* each student wants help this many times */
+
+sem_t students_sem;                  /* waiting students (TA sleeps when 0)   */
+sem_t ta_sem;                        /* TA available to help one student      */
+pthread_mutex_t chairs_mutex = PTHREAD_MUTEX_INITIALIZER;
+
+int waiting_students = 0;            /* occupied chairs (shared, mutex-guarded) */
+int total_students = 6;
+int students_done = 0;               /* students who got all their help          */
+
+static void pause_random(int max_sec) {         /* sleep 1..max_sec seconds */
+    sleep(1 + rand() % max_sec);
+}
+
+void *ta_thread(void *arg) {
+    (void)arg;
+    while (1) {
+        printf("[TA] No students. TA is sleeping...\n");
+        sem_wait(&amp;students_sem);                /* sleep until a student arrives */
+
+        /* a student is waiting (or woke us): take one off the chair */
+        pthread_mutex_lock(&amp;chairs_mutex);
+        if (students_done &gt;= total_students) { /* shutdown signal */
+            pthread_mutex_unlock(&amp;chairs_mutex);
+            break;
+        }
+        if (waiting_students &gt; 0) waiting_students--;
+        int left = waiting_students;
+        pthread_mutex_unlock(&amp;chairs_mutex);
+
+        sem_post(&amp;ta_sem);                      /* call the student in */
+        printf("[TA] Helping a student. Chairs occupied now: %d\n", left);
+        pause_random(3);                        /* helping takes time */
+        printf("[TA] Finished helping a student.\n");
+    }
+    printf("[TA] All students done. TA goes home.\n");
+    return NULL;
+}
+
+void *student_thread(void *arg) {
+    int id = *(int *)arg;
+    int helped = 0;
+
+    while (helped &lt; HELPS_PER_STUDENT) {
+        printf("    [Student %d] Programming for a while...\n", id);
+        pause_random(5);
+
+        pthread_mutex_lock(&amp;chairs_mutex);
+        if (waiting_students &lt; NUM_CHAIRS) {
+            waiting_students++;
+            printf("    [Student %d] Needs help. Sat on a chair (%d/%d occupied).\n",
+                   id, waiting_students, NUM_CHAIRS);
+            pthread_mutex_unlock(&amp;chairs_mutex);
+
+            sem_post(&amp;students_sem);            /* tell/wake the TA        */
+            sem_wait(&amp;ta_sem);                  /* wait until TA is ready */
+            printf("    [Student %d] Getting help from the TA.\n", id);
+            pause_random(3);
+            helped++;
+            printf("    [Student %d] Got help (%d/%d).\n", id, helped, HELPS_PER_STUDENT);
+        } else {
+            pthread_mutex_unlock(&amp;chairs_mutex);
+            printf("    [Student %d] No free chair! Will come back later.\n", id);
+        }
+    }
+
+    pthread_mutex_lock(&amp;chairs_mutex);
+    students_done++;
+    int all_done = (students_done &gt;= total_students);
+    pthread_mutex_unlock(&amp;chairs_mutex);
+    if (all_done) sem_post(&amp;students_sem);      /* wake sleeping TA so it can exit */
+    return NULL;
+}
+
+int main(int argc, char *argv[]) {
+    if (argc &gt; 1) total_students = atoi(argv[1]);
+    if (total_students &lt; 1) total_students = 1;
+    srand(42);                                  /* change for different runs */
+
+    sem_init(&amp;students_sem, 0, 0);
+    sem_init(&amp;ta_sem, 0, 0);
+
+    pthread_t ta;
+    pthread_t *students = malloc(sizeof(pthread_t) * total_students);
+    int *ids = malloc(sizeof(int) * total_students);
+
+    pthread_create(&amp;ta, NULL, ta_thread, NULL);
+    for (int i = 0; i &lt; total_students; i++) {
+        ids[i] = i + 1;
+        pthread_create(&amp;students[i], NULL, student_thread, &amp;ids[i]);
+    }
+    for (int i = 0; i &lt; total_students; i++) pthread_join(students[i], NULL);
+    pthread_join(ta, NULL);
+
+    sem_destroy(&amp;students_sem);
+    sem_destroy(&amp;ta_sem);
+    pthread_mutex_destroy(&amp;chairs_mutex);
+    free(students); free(ids);
+    printf("Simulation finished.\n");
+    return 0;
+}
+</code></div></div><p class="fine" id="copyStatus" role="status"></p></section>
+<section id="run" class="run"><div><div class="eyebrow">05 / Try it locally</div><h2>From source to office hours.</h2><p>Use GCC on Linux with POSIX thread and semaphore support. Pass the student count as an optional argument (default: 6). Every student requests help twice.</p><p class="fine">macOS does not support the unnamed semaphores used here without changes. Random thread scheduling changes the output order. The browser simulation needs no installation or network dependencies.</p></div><div class="terminal"><div class="bar"><span>terminal</span><span class="dots">●●●</span></div><pre><b>$</b> gcc -Wall -pthread sleeping_ta.c -o sleeping_ta
+<b>$</b> ./sleeping_ta 6
+
+[TA] No students. TA is sleeping...
+    [Student 2] Needs help.
+[TA] Helping a student.
+
+// Or try: ./sleeping_ta 10</pre></div></section></main><footer><b>The Sleeping Teaching Assistant</b><br>Group 8 - CSE 302 - SRM University AP - November 2026<br>Operating Systems · Instructor: Syed Sameen Ahmad Rizvi</footer>
+<script>window.previewErrors=[];window.addEventListener("error",e=>window.previewErrors.push(e.message));
+'use strict';
+const $=id=>document.getElementById(id);
+const raw=$('source').textContent;
+const escapeHTML=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+let inComment=false;
+$('source').innerHTML=raw.trimEnd().split('\n').map(line=>{
+ let cls='';const trimmed=line.trim();
+ if(inComment||trimmed.startsWith('/*')||trimmed.startsWith('*')||trimmed.startsWith('//'))cls='comment';
+ else if(trimmed.startsWith('#')||trimmed.startsWith('int ')||trimmed.startsWith('void ')||trimmed.startsWith('static ')||trimmed.startsWith('return '))cls='keyword';
+ else if(line.includes('printf('))cls='string';
+ if(line.includes('/*')&&!line.includes('*/'))inComment=true;
+ if(line.includes('*/'))inComment=false;
+ return '<span class="line '+cls+'">'+escapeHTML(line)+'</span>';
+}).join('');
+$('copy').onclick=async()=>{try{await navigator.clipboard.writeText(raw);$('copyStatus').textContent='Copied the complete C source.';}catch{$('copyStatus').textContent='Clipboard unavailable. Select and copy the code block manually.';}};
+$('theme').onclick=()=>document.body.classList.toggle('light');
+let students,queue,active,remaining,helped,left,done,students_sem,ta_sem,locked,paused,time,nextArrival,events;
+function log(message,kind='note'){const row=document.createElement('div');row.className='event '+kind;const stamp=document.createElement('time');stamp.textContent=(time/1000).toFixed(1).padStart(5,'0')+'s';row.append(stamp,document.createTextNode(message));$('log').prepend(row);while($('log').children.length>90)$('log').lastChild.remove();events++;}
+function critical(fn){if(locked)throw new Error('Mutex already locked');locked=true;try{fn();}finally{locked=false;}}
+function randomDelay(){return Number($('arrival').value)*(.5+Math.random());}
+function render(){
+ const chairMarkup=Array.from({length:Number($('capacity').value)},(_,i)=>'<div class="chair '+(queue[i]?'taken':'')+'"><span>'+(queue[i]?'🧑‍💻':'🪑')+'</span><small>'+(queue[i]?'Student '+queue[i].id:'Chair '+(i+1))+'</small></div>').join('');if($('chairs').dataset.markup!==chairMarkup){$('chairs').innerHTML=chairMarkup;$('chairs').dataset.markup=chairMarkup;}
+ $('figure').textContent=active?'🧑‍🏫':done===6?'👋':'😴';$('office').classList.toggle('active',!!active);$('taState').textContent=active?'TA is helping':done===6?'Office hours over':'TA is sleeping';$('studentState').textContent=active?'Student '+active.id+' · visit '+(active.visits+1)+'/2':done===6?'All students finished':'Waiting for a signal';
+ $('helped').textContent=helped;$('waiting').textContent=queue.length;$('left').textContent=left;$('done').textContent=done+'/6';$('studentSem').textContent='students_sem = '+students_sem;$('taSem').textContent='ta_sem = '+ta_sem;$('mutex').textContent='mutex: '+(locked?'locked':'unlocked');$('live').textContent=paused?'Ⅱ PAUSED':done===6?'✓ COMPLETE':'● RUNNING';$('pause').textContent=paused?'Resume':'Pause';$('arrive').disabled=paused||done===6;$('clock').textContent=new Date(time).toISOString().slice(14,19);
+}
+function serve(){if(active||students_sem===0)return;students_sem--;let chosen;critical(()=>{const index=Math.floor(Math.random()*queue.length);chosen=queue.splice(index,1)[0];});ta_sem++;log('TA wakes / sem_wait(students_sem); frees one chair; sem_post(ta_sem).','good');ta_sem--;chosen.state='helping';active=chosen;remaining=Number($('help').value);log('Student '+chosen.id+' consumes ta_sem and starts help.','good');}
+function arrive(){if(paused||done===6)return;const eligible=students.filter(s=>s.state==='programming');if(!eligible.length){log('All unfinished students are already waiting or getting help.');return;}const s=eligible[Math.floor(Math.random()*eligible.length)];let seated=false;critical(()=>{if(queue.length<Number($('capacity').value)){queue.push(s);s.state='waiting';seated=true;}});if(seated){students_sem++;log('Student '+s.id+' sits ('+queue.length+'/'+$('capacity').value+'); unlock; post(students_sem).','good');serve();}else{left++;log('Student '+s.id+': no free chair — leaves, programs, and will retry.','warn');}render();}
+function reset(){students=Array.from({length:6},(_,i)=>({id:i+1,visits:0,state:'programming'}));queue=[];active=null;remaining=0;helped=0;left=0;done=0;students_sem=0;ta_sem=0;locked=false;paused=false;time=0;events=0;nextArrival=randomDelay();$('log').replaceChildren();log('TA blocks on students_sem = 0. Six students are programming.');render();}
+$('arrive').onclick=arrive;$('reset').onclick=reset;$('capacity').onchange=reset;$('pause').onclick=()=>{paused=!paused;render();};
+$('arrival').oninput=()=>{$('arrivalOut').textContent=(Number($('arrival').value)/1000).toFixed(1)+' s';nextArrival=randomDelay();};$('help').oninput=()=>{$('helpOut').textContent=(Number($('help').value)/1000).toFixed(1)+' s';};
+setInterval(()=>{if(paused||done===6)return;time+=100;if(active){remaining-=100;if(remaining<=0){const s=active;active=null;helped++;s.visits++;s.state=s.visits===2?'done':'programming';log('Student '+s.id+' finished help ('+s.visits+'/2).','good');if(s.state==='done')critical(()=>done++);serve();if(!active&&done!==6)log('No students waiting: TA sleeps on students_sem.');if(done===6)log('Last student posts shutdown signal. TA wakes, checks students_done, goes home.','good');}}if($('auto').checked){nextArrival-=100;if(nextArrival<=0){arrive();nextArrival=randomDelay();}}render();},100);
+reset();
+</script></body></html>
